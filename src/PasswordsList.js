@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import PasswordStrength from "./PasswordStrength";
 
 function PasswordsList() {
   const passwords = useSelector((state) => state.passwords.value);
@@ -8,6 +9,7 @@ function PasswordsList() {
       {passwords.map((password) => (
         <li>
           {password.name} - {password.password}
+          <PasswordStrength password={password.password} />
         </li>
       ))}
     </ul>

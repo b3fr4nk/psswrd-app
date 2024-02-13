@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addPassword } from "./features/passwords/passwordsSlice";
+import PasswordStrength from "./PasswordStrength";
 
 function getRandomChar() {
   const charCode = Math.floor(Math.random() * 94) + 33;
@@ -58,6 +59,7 @@ function Password() {
           Save
         </button>
       </div>
+      <PasswordStrength password={password} />
     </div>
   );
 }
