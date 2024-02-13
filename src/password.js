@@ -13,6 +13,9 @@ function generatePassword(length) {
   console.log("generating password");
   let password = "";
   for (let i = 0; i < length; i++) {
+    if (i % 3 === 0) {
+      password += "-";
+    }
     password += getRandomChar();
   }
 
