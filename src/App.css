@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+input {
+  border-style: none;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+button {
+  border-radius: 5px;
+  border-style: none;
+  background-color: aliceblue;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+ul {
+  list-style-type: none;
+}
